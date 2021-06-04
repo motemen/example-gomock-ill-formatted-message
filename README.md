@@ -1,1 +1,1 @@
-	docker run --rm "$(docker build -q .)"
+	docker run --rm -v $PWD:/src -w /src golang go test
